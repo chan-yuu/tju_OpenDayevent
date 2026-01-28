@@ -1,6 +1,7 @@
 # AI Vision Lab - 智能视觉识别教学系统
 
 一个完整的AI视觉识别教学平台，集成数据标注、模型训练、物体识别和知识答题四大功能，专为中小学生AI教育设计。
+<img width="1923" height="1175" alt="vis" src="https://github.com/user-attachments/assets/1734a0da-e54f-4c38-8087-4f3a1ba97d14" />
 
 > 🚀 **[快速启动 →](QUICK_START.md)** | 📚 **[学习手册 →](AI_LEARNING_GUIDE.md)** | 🎯 **[答题系统 →](QUIZ_SYSTEM.md)** | 📖 **[详细指南 →](USAGE_GUIDE.md)**
 
