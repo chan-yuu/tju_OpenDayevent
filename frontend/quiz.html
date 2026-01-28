@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能调度知识问答</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            text-align: center;
+        }
+
+        .login-form input {
+            width: 300px;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .login-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .login-leaderboard {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .login-leaderboard h3 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .quiz-container {
+            display: none;
+        }
+
+        .progress {
+            background: #e0e0e0;
+            height: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option {
+            padding: 15px 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+        .option:hover {
+            border-color: #667eea;
+            background: #f0f0ff;
+        }
+
+        .option.selected {
+            border-color: #667eea;
+            background: #667eea;
+            color: white;
+        }
+
+        .option.correct {
+            border-color: #4CAF50;
+            background: #4CAF50;
+            color: white;
+        }
+
+        .option.wrong {
+            border-color: #f44336;
+            background: #f44336;
+            color: white;
+        }
+
+        .leaderboard {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .leaderboard-item:nth-child(1) {
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            color: white;
+        }
+
+        .leaderboard-item:nth-child(2) {
+            background: linear-gradient(90deg, #C0C0C0 0%, #A8A8A8 100%);
+            color: white;
+        }
+
+        .leaderboard-item:nth-child(3) {
+            background: linear-gradient(90deg, #CD7F32 0%, #B8860B 100%);
+            color: white;
+        }
+
+        .rank {
+            font-size: 24px;
+            font-weight: bold;
+            width: 50px;
+        }
+
+        .player-name {
+            flex: 1;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .score {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .result {
+            text-align: center;
+            display: none;
+        }
+
+        .result h2 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .result .final-score {
+            font-size: 48px;
+            color: #764ba2;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 智能调度知识问答</h1>
+            <p>测试你对智能调度系统的理解！</p>
+        </div>
+
+        <!-- 登录界面 -->
+        <div class="card login-form" id="loginForm">
+            <h2>请输入你的名字</h2>
+            <input type="text" id="playerName" placeholder="输入你的名字" maxlength="20">
+            <br>
+            <div class="login-buttons">
+                <button class="btn" onclick="startQuiz()">开始答题</button>
+                <a href="index.html" class="btn btn-secondary">返回调度系统</a>
+            </div>
+
+            <!-- 登录页面排行榜 -->
+            <div class="login-leaderboard">
+                <h3>🏆 排行榜 TOP 10</h3>
+                <div id="loginLeaderboardList"></div>
+            </div>
+        </div>
+
+        <!-- 答题界面 -->
+        <div class="quiz-container" id="quizContainer">
+            <div class="card">
+                <div class="progress">
+                    <div class="progress-bar" id="progressBar">0/20</div>
+                </div>
+                <div class="question" id="questionContainer"></div>
+                <button class="btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">下一题</button>
+                <button class="btn" id="submitBtn" onclick="submitAnswer()" style="display: none;">提交答案</button>
+            </div>
+
+            <div class="card">
+                <h2>🏆 实时排行榜</h2>
+                <div class="leaderboard" id="leaderboard"></div>
+            </div>
+        </div>
+
+        <!-- 结果界面 -->
+        <div class="card result" id="resultContainer">
+            <h2>🎉 答题完成！</h2>
+            <div class="final-score" id="finalScore"></div>
+            <p id="resultMessage"></p>
+            <button class="btn" onclick="location.reload()">重新开始</button>
+            <button class="btn" onclick="window.location.href='index.html'">返回系统</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
