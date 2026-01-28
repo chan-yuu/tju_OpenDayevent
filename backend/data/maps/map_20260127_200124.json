@@ -1,0 +1,287 @@
+{
+  "id": "map_20260127_200124",
+  "name": "1",
+  "background_image": "http://localhost:8080/map.png",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "南门",
+      "type": "大门",
+      "x": 150,
+      "y": 450
+    },
+    {
+      "id": 2,
+      "name": "北门",
+      "type": "大门",
+      "x": 750,
+      "y": 100
+    },
+    {
+      "id": 3,
+      "name": "主教学楼",
+      "type": "教学楼",
+      "x": 450,
+      "y": 250
+    },
+    {
+      "id": 4,
+      "name": "图书馆",
+      "type": "图书馆",
+      "x": 300,
+      "y": 250
+    },
+    {
+      "id": 5,
+      "name": "学生宿舍1",
+      "type": "宿舍",
+      "x": 200,
+      "y": 400
+    },
+    {
+      "id": 6,
+      "name": "学生宿舍2",
+      "type": "宿舍",
+      "x": 700,
+      "y": 400
+    },
+    {
+      "id": 7,
+      "name": "食堂A",
+      "type": "食堂",
+      "x": 350,
+      "y": 350
+    },
+    {
+      "id": 8,
+      "name": "食堂B",
+      "type": "食堂",
+      "x": 550,
+      "y": 350
+    },
+    {
+      "id": 9,
+      "name": "体育馆",
+      "type": "充电站",
+      "x": 600,
+      "y": 150
+    },
+    {
+      "id": 10,
+      "name": "实验楼",
+      "type": "实验楼",
+      "x": 250,
+      "y": 150
+    },
+    {
+      "id": 11,
+      "name": "工程馆",
+      "type": "工程馆",
+      "x": 500,
+      "y": 450
+    },
+    {
+      "id": 12,
+      "name": "充电站",
+      "type": "充电站",
+      "x": 800,
+      "y": 300
+    }
+  ],
+  "edges": [
+    {
+      "id": 100,
+      "startNodeId": 1,
+      "endNodeId": 5,
+      "waypoints": [],
+      "length": 120
+    },
+    {
+      "id": 101,
+      "startNodeId": 5,
+      "endNodeId": 7,
+      "waypoints": [],
+      "length": 120
+    },
+    {
+      "id": 102,
+      "startNodeId": 7,
+      "endNodeId": 4,
+      "waypoints": [],
+      "length": 110
+    },
+    {
+      "id": 103,
+      "startNodeId": 4,
+      "endNodeId": 3,
+      "waypoints": [],
+      "length": 150
+    },
+    {
+      "id": 104,
+      "startNodeId": 3,
+      "endNodeId": 8,
+      "waypoints": [],
+      "length": 140
+    },
+    {
+      "id": 105,
+      "startNodeId": 8,
+      "endNodeId": 6,
+      "waypoints": [],
+      "length": 150
+    },
+    {
+      "id": 106,
+      "startNodeId": 6,
+      "endNodeId": 12,
+      "waypoints": [],
+      "length": 120
+    },
+    {
+      "id": 107,
+      "startNodeId": 1,
+      "endNodeId": 10,
+      "waypoints": [],
+      "length": 200
+    },
+    {
+      "id": 108,
+      "startNodeId": 10,
+      "endNodeId": 4,
+      "waypoints": [],
+      "length": 110
+    },
+    {
+      "id": 109,
+      "startNodeId": 3,
+      "endNodeId": 9,
+      "waypoints": [],
+      "length": 180
+    },
+    {
+      "id": 110,
+      "startNodeId": 9,
+      "endNodeId": 2,
+      "waypoints": [],
+      "length": 150
+    },
+    {
+      "id": 111,
+      "startNodeId": 10,
+      "endNodeId": 2,
+      "waypoints": [],
+      "length": 250
+    },
+    {
+      "id": 112,
+      "startNodeId": 11,
+      "endNodeId": 3,
+      "waypoints": [],
+      "length": 180
+    },
+    {
+      "id": 113,
+      "startNodeId": 12,
+      "endNodeId": 9,
+      "waypoints": [],
+      "length": 200
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "type": "bus",
+      "currentNode": 1,
+      "targetNode": null,
+      "battery": 300,
+      "maxBattery": 300,
+      "batteryConsumption": 0.8,
+      "speed": 2,
+      "moving": false,
+      "moveProgress": 0,
+      "path": [],
+      "currentTask": null,
+      "status": "idle"
+    },
+    {
+      "id": 2,
+      "type": "truck",
+      "currentNode": 2,
+      "targetNode": null,
+      "battery": 400,
+      "maxBattery": 400,
+      "batteryConsumption": 0.6,
+      "speed": 1.5,
+      "moving": false,
+      "moveProgress": 0,
+      "path": [],
+      "currentTask": null,
+      "status": "idle"
+    },
+    {
+      "id": 3,
+      "type": "bus",
+      "currentNode": 4,
+      "targetNode": null,
+      "battery": 300,
+      "maxBattery": 300,
+      "batteryConsumption": 0.8,
+      "speed": 2,
+      "moving": false,
+      "moveProgress": 0,
+      "path": [],
+      "currentTask": null,
+      "status": "idle"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1769515273934.6982,
+      "pickupNodeId": 6,
+      "deliveryNodeId": 10,
+      "assignedVehicle": null,
+      "status": "pending",
+      "priority": 3,
+      "createdAt": 1769515273934
+    },
+    {
+      "id": 1769515273934.8242,
+      "pickupNodeId": 7,
+      "deliveryNodeId": 11,
+      "assignedVehicle": null,
+      "status": "pending",
+      "priority": 2,
+      "createdAt": 1769515273934
+    },
+    {
+      "id": 1769515273934.6453,
+      "pickupNodeId": 3,
+      "deliveryNodeId": 12,
+      "assignedVehicle": null,
+      "status": "pending",
+      "priority": 3,
+      "createdAt": 1769515273934
+    },
+    {
+      "id": 1769515273934.822,
+      "pickupNodeId": 6,
+      "deliveryNodeId": 2,
+      "assignedVehicle": null,
+      "status": "pending",
+      "priority": 3,
+      "createdAt": 1769515273934
+    },
+    {
+      "id": 1769515273934.7065,
+      "pickupNodeId": 3,
+      "deliveryNodeId": 9,
+      "assignedVehicle": null,
+      "status": "pending",
+      "priority": 2,
+      "createdAt": 1769515273934
+    }
+  ],
+  "created_at": "2026-01-27T20:01:24.989083",
+  "updated_at": "2026-01-27T20:01:24.989087"
+}

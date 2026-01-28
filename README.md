@@ -1,223 +1,196 @@
-# 自动驾驶决策规划演示系统
+# 校园智能调度系统
 
-## 🎉 项目介绍
+[![GitHub](https://img.shields.io/badge/GitHub-tju--scheduling--lab-blue)](https://github.com)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-green)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-这是一个基于Web的交互式自动驾驶路径规划演示系统，集成了 `python_motion_planning` 库的多种经典路径规划算法，提供直观的可视化界面和实时性能对比功能。
+## 项目简介
+校园环境下无人驾驶接驳车/物流车的智能调度系统，通过可视化界面让用户直观体验各种调度算法的运行效果。
 
-![Demo Screenshot](demo/screenshots/demo.png)
+## 📚 快速导航
 
-## ✨ 主要特性
+- ⚡ [5分钟快速开始](QUICKSTART.md) - 新手必读，快速上手
+- 📖 [完整项目说明](PROJECT.md) - 详细的项目架构和技术文档
+- 🚀 [使用指南](USAGE.md) - 详细的操作教程
+- 🎬 [功能演示](docs/DEMO.md) - 操作示例和最佳实践
+- 📋 [更新日志](CHANGELOG.md) - 版本历史和变更记录
+- 🔧 API文档 - 见下方接口说明
 
-- 🗺️ **交互式地图编辑**：点击或拖拽绘制障碍物、设置起终点
-- 🎯 **10种路径规划算法**：A*, Dijkstra, RRT, RRT*, JPS等
-- 📊 **实时性能对比**：计算时间、路径长度、搜索节点数
-- 🎬 **可视化展示**：搜索过程、扩展节点、规划路径
-- 🎮 **预设场景**：迷宫、停车场、城市道路等
-- 📱 **响应式设计**：支持不同屏幕尺寸
+## ⚡ 一键安装部署
 
-## 🚀 快速开始
+### 🚀 推荐方式：自动安装（适合新手）
 
-### 环境要求
-- Python 3.8+
-- 现代浏览器（Chrome, Firefox, Edge等）
-
-### 一键启动
 ```bash
-cd demo
-chmod +x start.sh
-./start.sh
+# 1. 下载或克隆项目
+cd ~/Documents/tju-scheduling-lab
+
+# 2. 运行一键安装脚本
+./install.sh
 ```
 
-然后访问：**http://localhost:8000**
+**自动完成以下操作：**
+- ✅ 检测系统环境
+- ✅ 安装Python依赖
+- ✅ 创建虚拟环境
+- ✅ 配置数据目录
+- ✅ 创建桌面快捷方式
 
-### 手动启动
+**安装完成后：**
+- 双击桌面的"智能调度系统"图标启动
+- 或运行 `./start.sh` 命令启动
+
+### 🔧 手动安装（适合开发者）
+
+如果自动安装失败，可以手动执行：
+
+#### 1. 安装后端依赖
 ```bash
-# 1. 安装后端依赖
-cd demo/backend
+cd backend
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-
-# 2. 安装python_motion_planning
-cd ../../python_motion_planning
-pip install -e .
-
-# 3. 启动服务器
-cd ../demo/backend
-python main.py
 ```
 
-## 📖 使用说明
-
-### 基本操作
-
-1. **设置起点和终点**
-   - 点击左侧的"起点"或"终点"按钮
-   - 在画布上点击设置位置
-
-2. **添加障碍物**
-   - 点击"障碍物"按钮
-   - 在画布上点击或拖拽绘制
-
-3. **选择算法并规划**
-   - 从下拉菜单选择算法
-   - 点击"开始规划"
-   - 查看可视化结果和性能统计
-
-4. **使用预设场景**
-   - 从"预设场景"下拉菜单选择
-   - 系统自动加载地图配置
-
-### 支持的算法
-
-**图搜索算法**
-- A* - 平衡性能和最优性
-- Dijkstra - 保证最优解
-- GBFS - 快速搜索
-- JPS - Jump Point Search
-- Theta* - 任意角度路径
-- Lazy Theta* - 优化的Theta*
-
-**采样算法**
-- RRT - 快速扩展随机树
-- RRT* - 渐近最优
-- RRT-Connect - 双向搜索
-
-**混合算法**
-- Voronoi Planner - 安全导航
-
-## 📁 项目结构
-
-```
-demo/
-├── README.md              # 项目文档
-├── GUIDE.md              # 使用指南
-├── PROJECT_SUMMARY.md    # 项目总结
-├── start.sh              # 启动脚本
-├── backend/
-│   ├── main.py           # FastAPI服务器
-│   └── requirements.txt  # 依赖列表
-├── frontend/
-│   ├── index.html        # 主页面
-│   ├── css/
-│   │   └── style.css     # 样式
-│   └── js/
-│       ├── config.js     # 配置
-│       ├── canvas.js     # Canvas绘图
-│       ├── api.js        # API通信
-│       └── app.js        # 应用逻辑
-└── scenarios/            # 预设场景
-    ├── simple_maze.json
-    ├── parking_lot.json
-    ├── city_road.json
-    └── narrow_passage.json
-```
-
-## 🎯 核心功能
-
-### 1. 地图编辑
-- 自由绘制障碍物
-- 设置起点和终点
-- 调整地图尺寸
-- 清除和重置
-
-### 2. 算法规划
-- 多种算法选择
-- 一键规划执行
-- 实时结果展示
-- 性能数据统计
-
-### 3. 可视化
-- 搜索节点展示
-- 路径高亮显示
-- 网格线切换
-- 清晰的颜色区分
-
-### 4. 性能对比
-- 多算法运行
-- 结果对比列表
-- 详细性能指标
-- 算法信息说明
-
-## 🔧 技术栈
-
-### 后端
-- **FastAPI** - 现代Web框架
-- **Python Motion Planning** - 算法库
-- **NumPy** - 数值计算
-
-### 前端
-- **HTML5/CSS3** - 页面结构和样式
-- **JavaScript (ES6+)** - 交互逻辑
-- **Canvas API** - 2D图形绘制
-
-## 📊 性能
-
-测试环境：50×50地图，中等复杂度
-
-| 算法 | 平均时间 | 路径质量 | 搜索节点 |
-|------|----------|----------|----------|
-| A* | 5-50ms | 最优 | 中等 |
-| Dijkstra | 10-100ms | 最优 | 较多 |
-| GBFS | 3-30ms | 较好 | 较少 |
-| RRT | 20-200ms | 一般 | 取决采样 |
-| Theta* | 8-60ms | 平滑最优 | 中等 |
-
-## 🎓 适用场景
-
-- **教学演示**：算法课程、机器人导航
-- **研究开发**：快速原型、算法测试
-- **技术展示**：产品Demo、概念验证
-- **学习练习**：理解算法原理
-
-## 📝 文档
-
-- [README.md](README.md) - 项目主文档
-- [GUIDE.md](GUIDE.md) - 快速使用指南
-- [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) - 项目总结
-- [API文档](http://localhost:8000/docs) - Swagger UI（启动后访问）
-
-## 🐛 故障排除
-
-### 后端无法启动
+#### 2. 启动后端服务
 ```bash
-# 检查Python版本
-python --version  # 需要 >=3.8
+python app.py
+```
+后端将运行在 `http://localhost:5000`
 
-# 重新安装依赖
-pip install -r backend/requirements.txt
+#### 3. 打开前端页面
+```bash
+cd frontend
+# 直接在浏览器中打开 map-editor.html
+# 或使用简单的HTTP服务器
+python -m http.server 8080
+```
+然后在浏览器访问 `http://localhost:8080/map-editor.html`
+
+## 使用说明
+
+### 地图编辑器操作
+
+#### 创建节点
+1. 在左侧工具栏选择"创建节点"模式
+2. 输入节点名称（如"东门"）
+3. 选择节点类型（如"大门"）
+4. 在地图上点击位置创建节点
+
+#### 创建边（道路）
+1. 在左侧工具栏选择"创建边"模式
+2. 点击起始节点
+3. 在地图上点击添加折点（可选，用于创建弯曲道路）
+4. 点击目标节点完成创建
+5. 系统会自动计算并显示道路长度
+
+#### 删除元素
+1. 在左侧工具栏选择"删除"模式
+2. 点击要删除的节点或边
+3. 删除节点会同时删除相关的所有边
+
+#### 保存和加载地图
+1. 输入地图名称
+2. 点击"💾 保存地图"按钮
+3. 点击"📂 加载地图"按钮可加载之前保存的地图
+
+## 项目结构
+```
+tju-scheduling-lab/
+├── backend/
+│   ├── app.py              # Flask后端服务
+│   ├── requirements.txt    # Python依赖
+│   └── data/              # 数据存储目录
+│       ├── maps/          # 地图配置文件
+│       └── uploads/       # 上传的图片
+├── frontend/
+│   ├── map-editor.html    # 地图编辑器界面
+│   ├── map-editor.js      # 地图编辑器逻辑
+│   └── map.png           # 示例背景图
+└── docs/
+    └── README.md         # 项目文档
 ```
 
-### 前端无法连接
-- 确认后端已启动
-- 检查端口8000是否被占用
-- 查看浏览器控制台错误
+## API文档
 
-### 规划失败
-- 确保已设置起点和终点
-- 检查起终点是否在障碍物上
-- 验证是否存在可达路径
+### 节点类型
+- `GET /api/node-types` - 获取所有节点类型
 
-## 🚀 未来计划
+### 地图管理
+- `GET /api/maps` - 获取所有地图列表
+- `GET /api/map/<map_id>` - 获取指定地图
+- `POST /api/map` - 保存地图
+- `DELETE /api/map/<map_id>` - 删除地图
 
-- [ ] 路径跟踪与车辆控制
-- [ ] 曲线平滑优化
-- [ ] 搜索过程动画
-- [ ] 动态障碍物
-- [ ] 3D可视化
-- [ ] 地图导入导出
-- [ ] 更多算法集成
+### 图片上传
+- `POST /api/upload-image` - 上传背景图片
+- `GET /api/images/<filename>` - 获取图片
 
-## 🤝 贡献
+## 数据格式
 
-欢迎提交Issue和Pull Request！
+### 地图数据结构
+```json
+{
+  "id": "map_20250127_120000",
+  "name": "天津大学卫津路校区",
+  "background_image": "data:image/png;base64,...",
+  "nodes": [
+    {
+      "id": 1706345678901,
+      "name": "东门",
+      "type": "大门",
+      "x": 350,
+      "y": 250
+    }
+  ],
+  "edges": [
+    {
+      "id": 1706345678902,
+      "startNodeId": 1706345678901,
+      "endNodeId": 1706345678903,
+      "waypoints": [
+        {"x": 400, "y": 300},
+        {"x": 450, "y": 350}
+      ],
+      "length": 156
+    }
+  ],
+  "created_at": "2025-01-27T12:00:00",
+  "updated_at": "2025-01-27T12:30:00"
+}
+```
 
-## 📄 许可证
+## 开发计划
 
-基于 python_motion_planning 项目开发。
+### 已完成 ✅
+- [x] 地图编辑器界面设计
+- [x] 节点创建和管理
+- [x] 边创建和折线支持
+- [x] 地图保存和加载
+- [x] 后端API服务
 
-## 📧 联系
+### 待实现 🚧
+- [ ] 调度算法实现（Dijkstra、A*等）
+- [ ] 车辆模拟和动画
+- [ ] 实时调度可视化
+- [ ] 多车辆协同调度
+- [ ] 性能统计和分析
+- [ ] 充电站调度策略
 
-如有问题或建议，请提交Issue。
+## 技术栈
+- **前端**: HTML5 Canvas、原生JavaScript
+- **后端**: Python Flask
+- **数据存储**: JSON文件
+- **通信**: RESTful API
 
----
+## 注意事项
+1. 确保后端服务运行后再打开前端页面
+2. 背景图片建议使用清晰的卫星地图
+3. 节点名称建议使用有意义的中文名称
+4. 创建边时可以添加多个折点来模拟真实道路
+5. 定期保存地图以防数据丢失
 
-**开始你的路径规划之旅！** 🚗💨
+## 贡献
+欢迎提交问题和改进建议！
+
+## 许可
+MIT License
