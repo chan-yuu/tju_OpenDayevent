@@ -12,6 +12,8 @@
 
 <img width="1923" height="1175" alt="vis" src="https://github.com/user-attachments/assets/9236a75b-e659-44c7-b349-35fd2fa668ec" />
 
+注意: 所有的项目都是通过install.sh直接获得桌面应用.
+
 
 ## 📚 快速导航
 
