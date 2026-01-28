@@ -1,0 +1,40 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="eyeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="128" cy="128" r="120" fill="url(#bgGradient)"/>
+  
+  <!-- Eye Shape -->
+  <ellipse cx="128" cy="128" rx="80" ry="50" fill="white" opacity="0.95"/>
+  
+  <!-- Iris -->
+  <circle cx="128" cy="128" r="35" fill="url(#eyeGradient)"/>
+  
+  <!-- Pupil -->
+  <circle cx="128" cy="128" r="18" fill="#1e293b"/>
+  
+  <!-- Light Reflection -->
+  <circle cx="118" cy="118" r="8" fill="white" opacity="0.8"/>
+  
+  <!-- Scan Lines -->
+  <line x1="48" y1="128" x2="90" y2="128" stroke="#60a5fa" stroke-width="3" opacity="0.7"/>
+  <line x1="166" y1="128" x2="208" y2="128" stroke="#60a5fa" stroke-width="3" opacity="0.7"/>
+  <line x1="128" y1="78" x2="128" y2="98" stroke="#a78bfa" stroke-width="3" opacity="0.7"/>
+  <line x1="128" y1="158" x2="128" y2="178" stroke="#a78bfa" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Corner Brackets -->
+  <path d="M 40 60 L 40 40 L 60 40" stroke="#fbbf24" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 196 40 L 216 40 L 216 60" stroke="#fbbf24" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 216 196 L 216 216 L 196 216" stroke="#fbbf24" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 60 216 L 40 216 L 40 196" stroke="#fbbf24" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

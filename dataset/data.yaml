@@ -1,0 +1,10 @@
+# YOLO 数据集配置文件 - 自动生成
+# 生成时间: 2026-01-28 19:01:19
+
+path: /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset
+train: images
+val: images
+nc: 2
+names:
+- dog
+- cat

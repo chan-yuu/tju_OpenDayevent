@@ -1,0 +1,13 @@
+dog
+cat
+person
+car
+bicycle
+motorcycle
+bus
+truck
+traffic_light
+stop_sign
+pedestrian
+traffic_cone
+barrier

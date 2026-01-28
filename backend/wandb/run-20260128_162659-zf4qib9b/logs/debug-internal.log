@@ -1,0 +1,17 @@
+{"time":"2026-01-28T16:26:59.315088971+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2026-01-28T16:27:00.212561322+08:00","level":"INFO","msg":"stream: created new stream","id":"zf4qib9b"}
+{"time":"2026-01-28T16:27:00.212580926+08:00","level":"INFO","msg":"stream: started","id":"zf4qib9b"}
+{"time":"2026-01-28T16:27:00.21259745+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"zf4qib9b"}
+{"time":"2026-01-28T16:27:00.212640791+08:00","level":"INFO","msg":"handler: started","stream_id":"zf4qib9b"}
+{"time":"2026-01-28T16:27:00.212637131+08:00","level":"INFO","msg":"sender: started","stream_id":"zf4qib9b"}
+{"time":"2026-01-28T16:27:00.519108101+08:00","level":"ERROR","msg":"HTTP error","status":401,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2026-01-28T16:27:00.519172892+08:00","level":"ERROR","msg":"runupserter: failed to init run","error":"returned error 401: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"user is not logged in\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2026-01-28T16:28:03.579758446+08:00","level":"INFO","msg":"stream: closing","id":"zf4qib9b"}
+{"time":"2026-01-28T16:28:03.579884855+08:00","level":"ERROR","msg":"sender: uploadConfigFile: stream: no run"}
+{"time":"2026-01-28T16:28:03.911732724+08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2026-01-28T16:28:03.911802806+08:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project /YOLOv8 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2026-01-28T16:28:03.912078485+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-28T16:28:03.912108855+08:00","level":"INFO","msg":"handler: closed","stream_id":"zf4qib9b"}
+{"time":"2026-01-28T16:28:03.912113741+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zf4qib9b"}
+{"time":"2026-01-28T16:28:03.912192708+08:00","level":"INFO","msg":"sender: closed","stream_id":"zf4qib9b"}
+{"time":"2026-01-28T16:28:03.912208334+08:00","level":"INFO","msg":"stream: closed","id":"zf4qib9b"}

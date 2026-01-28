@@ -1,0 +1,17 @@
+{
+  "leaderboard": [
+    {
+      "username": "陈云",
+      "score": 300,
+      "time": 30,
+      "timestamp": "2026-01-28T18:46:00"
+    },
+    {
+      "username": "王国星",
+      "score": 295,
+      "time": 45,
+      "timestamp": "2026-01-28T18:47:00"
+    }
+  ],
+  "last_updated": "2026-01-28T18:49:11.601758"
+}

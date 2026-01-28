@@ -1,0 +1,856 @@
+INFO:     Will watch for changes in these directories: ['/home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [560271] using WatchFiles
+/home/cyun/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py:634: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(file, map_location="cpu"), file  # load
+INFO:     Started server process [560277]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Loaded pretrained YOLOv8s model
+INFO:     127.0.0.1:34348 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34364 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34364 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34364 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34364 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34364 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34364 - "POST /start-labelimg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "POST /generate-dataset-yaml HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "POST /generate-dataset-yaml HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58558 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "POST /generate-dataset-yaml HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46184 - "GET /get-leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40188 - "GET /get-leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40188 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40188 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40188 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40188 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40188 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40188 - "POST /start-labelimg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40204 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40204 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40204 - "GET / HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [560277]
+/home/cyun/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py:634: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(file, map_location="cpu"), file  # load
+INFO:     Started server process [565251]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Loaded pretrained YOLOv8s model
+INFO:     127.0.0.1:40846 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39748 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39748 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39748 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39748 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39748 - "GET /get-leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET /get-leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+Training config: nc=2, names=['dog', 'cat']
+Dataset validation: nc=2, classes=['dog', 'cat']
+Found 9 label files
+INFO:     127.0.0.1:39742 - "POST /train?epochs=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+New https://pypi.org/project/ultralytics/8.4.8 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.1.0 🚀 Python-3.8.10 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 7792MiB)
+[34m[1mengine/trainer: [0mtask=detect, mode=train, model=yolov8s.pt, data=/home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/backend/temp_data.yaml, epochs=50, time=None, patience=50, batch=16, imgsz=640, save=True, save_period=-1, cache=False, device=0, workers=8, project=None, name=train, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/detect/train
+Overriding model.yaml nc=80 with nc=2
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]                 
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+  2                  -1  1     29056  ultralytics.nn.modules.block.C2f             [64, 64, 1, True]             
+  3                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  4                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]           
+  5                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  6                  -1  2    788480  ultralytics.nn.modules.block.C2f             [256, 256, 2, True]           
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]              
+  8                  -1  1   1838080  ultralytics.nn.modules.block.C2f             [512, 512, 1, True]           
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 12                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 15                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+ 16                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 18                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+ 19                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 21                  -1  1   1969152  ultralytics.nn.modules.block.C2f             [768, 512, 1]                 
+ 22        [15, 18, 21]  1   2116822  ultralytics.nn.modules.head.Detect           [2, [128, 256, 512]]          
+Model summary: 225 layers, 11136374 parameters, 11136358 gradients, 28.6 GFLOPs
+
+Transferred 349/355 items from pretrained weights
+[34m[1mTensorBoard: [0mStart with 'tensorboard --logdir runs/detect/train', view at http://localhost:6006/
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [0mchecks passed ✅
+/home/cyun/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py:634: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(file, map_location="cpu"), file  # load
+/home/cyun/.local/lib/python3.8/site-packages/ultralytics/utils/checks.py:638: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(True):
+/home/cyun/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py:271: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.amp)
+[34m[1mtrain: [0mScanning /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels...:   0%|          | 0/9 [00:00<?, ?it/s][34m[1mtrain: [0mScanning /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels... 9 images, 0 backgrounds, 0 corrupt: 100%|██████████| 9/9 [00:00<00:00, 310.78it/s][34m[1mtrain: [0mNew cache created: /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels.cache
+
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+[34m[1mval: [0mScanning /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels.cache... 9 images, 0 backgrounds, 0 corrupt: 100%|██████████| 9/9 [00:00<?, ?it/s][34m[1mval: [0mScanning /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels.cache... 9 images, 0 backgrounds, 0 corrupt: 100%|██████████| 9/9 [00:00<?, ?it/s]
+Plotting labels to runs/detect/train/labels.jpg... 
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically... 
+[34m[1moptimizer:[0m AdamW(lr=0.001667, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+50 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/1 [00:00<?, ?it/s]       1/50      2.31G      1.275      3.344      1.699         27        640:   0%|          | 0/1 [00:00<?, ?it/s]       1/50      2.31G      1.275      3.344      1.699         27        640: 100%|██████████| 1/1 [00:00<00:00,  3.27it/s]       1/50      2.31G      1.275      3.344      1.699         27        640: 100%|██████████| 1/1 [00:00<00:00,  3.26it/s]
+Progress update: Epoch 1/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 11.03it/s]                   all          9          9      0.207      0.462      0.466      0.329
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       2/50      2.33G     0.9969      3.214      1.386         28        640:   0%|          | 0/1 [00:00<?, ?it/s]       2/50      2.33G     0.9969      3.214      1.386         28        640: 100%|██████████| 1/1 [00:00<00:00,  8.47it/s]       2/50      2.33G     0.9969      3.214      1.386         28        640: 100%|██████████| 1/1 [00:00<00:00,  8.46it/s]
+Progress update: Epoch 2/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 12.97it/s]                   all          9          9      0.238      0.546      0.455       0.29
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       3/50      2.29G      1.092       3.28      1.592         27        640:   0%|          | 0/1 [00:00<?, ?it/s]       3/50      2.29G      1.092       3.28      1.592         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.44it/s]       3/50      2.29G      1.092       3.28      1.592         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.43it/s]
+Progress update: Epoch 3/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 12.48it/s]                   all          9          9      0.248      0.547      0.442      0.281
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       4/50      2.28G      1.022      3.001      1.504         27        640:   0%|          | 0/1 [00:00<?, ?it/s]       4/50      2.28G      1.022      3.001      1.504         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.51it/s]       4/50      2.28G      1.022      3.001      1.504         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.50it/s]
+Progress update: Epoch 4/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.02it/s]                   all          9          9      0.262      0.749      0.452      0.303
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       5/50      2.32G       1.27      3.278      1.751         29        640:   0%|          | 0/1 [00:00<?, ?it/s]       5/50      2.32G       1.27      3.278      1.751         29        640: 100%|██████████| 1/1 [00:00<00:00,  7.19it/s]       5/50      2.32G       1.27      3.278      1.751         29        640: 100%|██████████| 1/1 [00:00<00:00,  7.19it/s]
+Progress update: Epoch 5/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.05it/s]                   all          9          9      0.396      0.667      0.669      0.471
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+       6/50      2.37G     0.9248      2.488      1.357         29        640:   0%|          | 0/1 [00:00<?, ?it/s]       6/50      2.37G     0.9248      2.488      1.357         29        640: 100%|██████████| 1/1 [00:00<00:00,  8.38it/s]       6/50      2.37G     0.9248      2.488      1.357         29        640: 100%|██████████| 1/1 [00:00<00:00,  8.38it/s]
+Progress update: Epoch 6/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.71it/s]                   all          9          9      0.387      0.667      0.669      0.471
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       7/50      2.38G      1.314      3.003      1.826         22        640:   0%|          | 0/1 [00:00<?, ?it/s]       7/50      2.38G      1.314      3.003      1.826         22        640: 100%|██████████| 1/1 [00:00<00:00,  8.39it/s]       7/50      2.38G      1.314      3.003      1.826         22        640: 100%|██████████| 1/1 [00:00<00:00,  8.39it/s]
+Progress update: Epoch 7/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.36it/s]                   all          9          9      0.389      0.667      0.669      0.475
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       8/50      2.38G       1.17      2.582      1.609         27        640:   0%|          | 0/1 [00:00<?, ?it/s]       8/50      2.38G       1.17      2.582      1.609         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.08it/s]       8/50      2.38G       1.17      2.582      1.609         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.07it/s]
+Progress update: Epoch 8/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.12it/s]                   all          9          9      0.651          1      0.879      0.746
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       9/50      2.37G     0.7322      1.739      1.344         33        640:   0%|          | 0/1 [00:00<?, ?it/s]       9/50      2.37G     0.7322      1.739      1.344         33        640: 100%|██████████| 1/1 [00:00<00:00,  8.29it/s]       9/50      2.37G     0.7322      1.739      1.344         33        640: 100%|██████████| 1/1 [00:00<00:00,  8.28it/s]
+Progress update: Epoch 9/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 16.67it/s]                   all          9          9      0.927      0.917      0.975      0.838
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      10/50      2.38G      0.702      1.806      1.223         27        640:   0%|          | 0/1 [00:00<?, ?it/s]      10/50      2.38G      0.702      1.806      1.223         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.14it/s]      10/50      2.38G      0.702      1.806      1.223         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.14it/s]
+Progress update: Epoch 10/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 13.40it/s]                   all          9          9      0.882      0.902      0.995       0.83
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+      11/50      2.38G      0.591      1.656      1.299         19        640:   0%|          | 0/1 [00:00<?, ?it/s]      11/50      2.38G      0.591      1.656      1.299         19        640: 100%|██████████| 1/1 [00:00<00:00,  8.17it/s]      11/50      2.38G      0.591      1.656      1.299         19        640: 100%|██████████| 1/1 [00:00<00:00,  8.16it/s]
+Progress update: Epoch 11/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 11.18it/s]                   all          9          9       0.88      0.583      0.663      0.561
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      12/50      2.38G     0.7061      1.943      1.336         22        640:   0%|          | 0/1 [00:00<?, ?it/s]      12/50      2.38G     0.7061      1.943      1.336         22        640: 100%|██████████| 1/1 [00:00<00:00,  8.09it/s]      12/50      2.38G     0.7061      1.943      1.336         22        640: 100%|██████████| 1/1 [00:00<00:00,  8.08it/s]
+Progress update: Epoch 12/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 10.52it/s]                   all          9          9      0.836      0.833      0.835       0.74
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      13/50      2.38G     0.9039      1.977      1.381         18        640:   0%|          | 0/1 [00:00<?, ?it/s]      13/50      2.38G     0.9039      1.977      1.381         18        640: 100%|██████████| 1/1 [00:00<00:00,  8.34it/s]      13/50      2.38G     0.9039      1.977      1.381         18        640: 100%|██████████| 1/1 [00:00<00:00,  8.34it/s]
+Progress update: Epoch 13/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 10.63it/s]                   all          9          9      0.934      0.711      0.942      0.854
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      14/50      2.38G     0.7633      1.603      1.306         27        640:   0%|          | 0/1 [00:00<?, ?it/s]      14/50      2.38G     0.7633      1.603      1.306         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.23it/s]      14/50      2.38G     0.7633      1.603      1.306         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.22it/s]
+Progress update: Epoch 14/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 11.06it/s]                   all          9          9      0.938      0.833      0.913       0.84
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      15/50      2.37G     0.7378      1.431       1.34         24        640:   0%|          | 0/1 [00:00<?, ?it/s]      15/50      2.37G     0.7378      1.431       1.34         24        640: 100%|██████████| 1/1 [00:00<00:00,  8.24it/s]      15/50      2.37G     0.7378      1.431       1.34         24        640: 100%|██████████| 1/1 [00:00<00:00,  8.23it/s]
+Progress update: Epoch 15/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 12.85it/s]                   all          9          9      0.904      0.833      0.954      0.898
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      16/50      2.38G     0.6443      1.318      1.184         27        640:   0%|          | 0/1 [00:00<?, ?it/s]      16/50      2.38G     0.6443      1.318      1.184         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.21it/s]      16/50      2.38G     0.6443      1.318      1.184         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.20it/s]
+Progress update: Epoch 16/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 13.58it/s]                   all          9          9      0.946      0.833      0.929       0.88
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+      17/50      2.38G     0.7291      1.799      1.348         21        640:   0%|          | 0/1 [00:00<?, ?it/s]      17/50      2.38G     0.7291      1.799      1.348         21        640: 100%|██████████| 1/1 [00:00<00:00,  8.28it/s]      17/50      2.38G     0.7291      1.799      1.348         21        640: 100%|██████████| 1/1 [00:00<00:00,  8.27it/s]
+Progress update: Epoch 17/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 15.01it/s]                   all          9          9      0.895      0.744      0.897      0.849
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      18/50      2.37G     0.4948      1.136      1.124         29        640:   0%|          | 0/1 [00:00<?, ?it/s]      18/50      2.37G     0.4948      1.136      1.124         29        640: 100%|██████████| 1/1 [00:00<00:00,  8.88it/s]      18/50      2.37G     0.4948      1.136      1.124         29        640: 100%|██████████| 1/1 [00:00<00:00,  8.88it/s]
+Progress update: Epoch 18/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 14.55it/s]                   all          9          9      0.895      0.744      0.897      0.849
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      19/50      2.38G     0.4932      1.079      1.092         29        640:   0%|          | 0/1 [00:00<?, ?it/s]      19/50      2.38G     0.4932      1.079      1.092         29        640: 100%|██████████| 1/1 [00:00<00:00,  8.21it/s]      19/50      2.38G     0.4932      1.079      1.092         29        640: 100%|██████████| 1/1 [00:00<00:00,  8.21it/s]
+Progress update: Epoch 19/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 17.06it/s]                   all          9          9      0.943        0.7      0.952      0.921
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+      20/50      2.37G     0.6288      1.365      1.206         27        640:   0%|          | 0/1 [00:00<?, ?it/s]      20/50      2.37G     0.6288      1.365      1.206         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.92it/s]      20/50      2.37G     0.6288      1.365      1.206         27        640: 100%|██████████| 1/1 [00:00<00:00,  8.91it/s]
+Progress update: Epoch 20/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 15.66it/s]                   all          9          9      0.943        0.7      0.952      0.921
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      21/50      2.38G     0.5577      1.192      1.131         27        640:   0%|          | 0/1 [00:00<?, ?it/s]      21/50      2.38G     0.5577      1.192      1.131         27        640: 100%|██████████| 1/1 [00:00<00:00,  7.94it/s]      21/50      2.38G     0.5577      1.192      1.131         27        640: 100%|██████████| 1/1 [00:00<00:00,  7.93it/s]
+Progress update: Epoch 21/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 17.31it/s]                   all          9          9      0.867      0.695      0.955      0.891
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      22/50      2.37G      0.438      1.171      1.046         26        640:   0%|          | 0/1 [00:00<?, ?it/s]      22/50      2.37G      0.438      1.171      1.046         26        640: 100%|██████████| 1/1 [00:00<00:00,  8.95it/s]      22/50      2.37G      0.438      1.171      1.046         26        640: 100%|██████████| 1/1 [00:00<00:00,  8.95it/s]
+Progress update: Epoch 22/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 17.95it/s]                   all          9          9      0.867      0.695      0.955      0.891
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      23/50      2.37G     0.4325     0.9513      1.064         26        640:   0%|          | 0/1 [00:00<?, ?it/s]      23/50      2.37G     0.4325     0.9513      1.064         26        640: 100%|██████████| 1/1 [00:00<00:00,  8.06it/s]      23/50      2.37G     0.4325     0.9513      1.064         26        640: 100%|██████████| 1/1 [00:00<00:00,  8.06it/s]
+Progress update: Epoch 23/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 17.90it/s]                   all          9          9      0.953      0.776      0.945      0.803
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      24/50      2.37G     0.7692      1.178      1.406         21        640:   0%|          | 0/1 [00:00<?, ?it/s]      24/50      2.37G     0.7692      1.178      1.406         21        640: 100%|██████████| 1/1 [00:00<00:00,  8.84it/s]      24/50      2.37G     0.7692      1.178      1.406         21        640: 100%|██████████| 1/1 [00:00<00:00,  8.83it/s]
+Progress update: Epoch 24/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.72it/s]                   all          9          9      0.953      0.776      0.945      0.803
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      25/50      2.38G     0.4979     0.8697      1.071         28        640:   0%|          | 0/1 [00:00<?, ?it/s]      25/50      2.38G     0.4979     0.8697      1.071         28        640: 100%|██████████| 1/1 [00:00<00:00,  8.50it/s]      25/50      2.38G     0.4979     0.8697      1.071         28        640: 100%|██████████| 1/1 [00:00<00:00,  8.49it/s]
+Progress update: Epoch 25/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.40it/s]                   all          9          9      0.938      0.851      0.955      0.797
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      26/50      2.37G      0.322     0.7232     0.9689         33        640:   0%|          | 0/1 [00:00<?, ?it/s]      26/50      2.37G      0.322     0.7232     0.9689         33        640: 100%|██████████| 1/1 [00:00<00:00,  9.02it/s]      26/50      2.37G      0.322     0.7232     0.9689         33        640: 100%|██████████| 1/1 [00:00<00:00,  9.01it/s]
+Progress update: Epoch 26/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.19it/s]                   all          9          9      0.938      0.851      0.955      0.797
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      27/50      2.38G      0.367     0.9134     0.9455         25        640:   0%|          | 0/1 [00:00<?, ?it/s]      27/50      2.38G      0.367     0.9134     0.9455         25        640: 100%|██████████| 1/1 [00:00<00:00,  8.54it/s]      27/50      2.38G      0.367     0.9134     0.9455         25        640: 100%|██████████| 1/1 [00:00<00:00,  8.53it/s]
+Progress update: Epoch 27/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.03it/s]                   all          9          9      0.869      0.887      0.984       0.83
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      28/50      2.37G     0.4959      0.766       1.06         25        640:   0%|          | 0/1 [00:00<?, ?it/s]      28/50      2.37G     0.4959      0.766       1.06         25        640: 100%|██████████| 1/1 [00:00<00:00,  9.03it/s]      28/50      2.37G     0.4959      0.766       1.06         25        640: 100%|██████████| 1/1 [00:00<00:00,  9.03it/s]
+Progress update: Epoch 28/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.13it/s]                   all          9          9      0.869      0.887      0.984       0.83
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      29/50      2.37G     0.5072      1.043      1.186         24        640:   0%|          | 0/1 [00:00<?, ?it/s]      29/50      2.37G     0.5072      1.043      1.186         24        640: 100%|██████████| 1/1 [00:00<00:00,  8.17it/s]      29/50      2.37G     0.5072      1.043      1.186         24        640: 100%|██████████| 1/1 [00:00<00:00,  8.17it/s]
+Progress update: Epoch 29/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.30it/s]                   all          9          9      0.874      0.922      0.995      0.913
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      30/50      2.37G     0.4977      1.013      1.106         20        640:   0%|          | 0/1 [00:00<?, ?it/s]      30/50      2.37G     0.4977      1.013      1.106         20        640: 100%|██████████| 1/1 [00:00<00:00,  9.13it/s]      30/50      2.37G     0.4977      1.013      1.106         20        640: 100%|██████████| 1/1 [00:00<00:00,  9.12it/s]
+Progress update: Epoch 30/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.81it/s]                   all          9          9      0.874      0.922      0.995      0.913
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      31/50      2.38G     0.4185      1.045      1.174         23        640:   0%|          | 0/1 [00:00<?, ?it/s]      31/50      2.38G     0.4185      1.045      1.174         23        640: 100%|██████████| 1/1 [00:00<00:00,  8.20it/s]      31/50      2.38G     0.4185      1.045      1.174         23        640: 100%|██████████| 1/1 [00:00<00:00,  8.19it/s]
+Progress update: Epoch 31/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.48it/s]                   all          9          9      0.947      0.878      0.995      0.936
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      32/50      2.37G     0.4319     0.8227      1.034         29        640:   0%|          | 0/1 [00:00<?, ?it/s]      32/50      2.37G     0.4319     0.8227      1.034         29        640: 100%|██████████| 1/1 [00:00<00:00,  8.90it/s]      32/50      2.37G     0.4319     0.8227      1.034         29        640: 100%|██████████| 1/1 [00:00<00:00,  8.89it/s]
+Progress update: Epoch 32/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.71it/s]                   all          9          9      0.947      0.878      0.995      0.936
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      33/50      2.38G     0.5524     0.9317      1.172         30        640:   0%|          | 0/1 [00:00<?, ?it/s]      33/50      2.38G     0.5524     0.9317      1.172         30        640: 100%|██████████| 1/1 [00:00<00:00,  8.15it/s]      33/50      2.38G     0.5524     0.9317      1.172         30        640: 100%|██████████| 1/1 [00:00<00:00,  8.14it/s]
+Progress update: Epoch 33/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.18it/s]                   all          9          9      0.911      0.844      0.995      0.971
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      34/50      2.37G     0.5821       1.01      1.203         23        640:   0%|          | 0/1 [00:00<?, ?it/s]      34/50      2.37G     0.5821       1.01      1.203         23        640: 100%|██████████| 1/1 [00:00<00:00,  9.22it/s]      34/50      2.37G     0.5821       1.01      1.203         23        640: 100%|██████████| 1/1 [00:00<00:00,  9.21it/s]
+Progress update: Epoch 34/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.25it/s]                   all          9          9      0.911      0.844      0.995      0.971
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      35/50      2.37G     0.5021      1.045      1.151         23        640:   0%|          | 0/1 [00:00<?, ?it/s]      35/50      2.37G     0.5021      1.045      1.151         23        640: 100%|██████████| 1/1 [00:00<00:00,  8.46it/s]      35/50      2.37G     0.5021      1.045      1.151         23        640: 100%|██████████| 1/1 [00:00<00:00,  8.45it/s]
+Progress update: Epoch 35/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.80it/s]                   all          9          9      0.871      0.852      0.995       0.95
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      36/50      2.37G     0.5429     0.9915      1.238         22        640:   0%|          | 0/1 [00:00<?, ?it/s]      36/50      2.37G     0.5429     0.9915      1.238         22        640: 100%|██████████| 1/1 [00:00<00:00,  8.77it/s]      36/50      2.37G     0.5429     0.9915      1.238         22        640: 100%|██████████| 1/1 [00:00<00:00,  8.77it/s]
+Progress update: Epoch 36/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.94it/s]                   all          9          9      0.871      0.852      0.995       0.95
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      37/50      2.37G     0.5452      0.952       1.19         28        640:   0%|          | 0/1 [00:00<?, ?it/s]      37/50      2.37G     0.5452      0.952       1.19         28        640: 100%|██████████| 1/1 [00:00<00:00,  8.31it/s]      37/50      2.37G     0.5452      0.952       1.19         28        640: 100%|██████████| 1/1 [00:00<00:00,  8.31it/s]
+Progress update: Epoch 37/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.55it/s]                   all          9          9      0.854          1      0.995      0.976
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      38/50      2.37G      0.448      0.791       1.03         31        640:   0%|          | 0/1 [00:00<?, ?it/s]      38/50      2.37G      0.448      0.791       1.03         31        640: 100%|██████████| 1/1 [00:00<00:00,  8.85it/s]      38/50      2.37G      0.448      0.791       1.03         31        640: 100%|██████████| 1/1 [00:00<00:00,  8.84it/s]
+Progress update: Epoch 38/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.17it/s]                   all          9          9      0.854          1      0.995      0.976
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      39/50      2.38G     0.4591     0.8266      1.107         26        640:   0%|          | 0/1 [00:00<?, ?it/s]      39/50      2.38G     0.4591     0.8266      1.107         26        640: 100%|██████████| 1/1 [00:00<00:00,  8.18it/s]      39/50      2.38G     0.4591     0.8266      1.107         26        640: 100%|██████████| 1/1 [00:00<00:00,  8.17it/s]
+Progress update: Epoch 39/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.74it/s]                   all          9          9      0.947          1      0.995      0.969
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      40/50      2.37G     0.5423     0.8233      1.081         35        640:   0%|          | 0/1 [00:00<?, ?it/s]      40/50      2.37G     0.5423     0.8233      1.081         35        640: 100%|██████████| 1/1 [00:00<00:00,  8.90it/s]      40/50      2.37G     0.5423     0.8233      1.081         35        640: 100%|██████████| 1/1 [00:00<00:00,  8.90it/s]
+Progress update: Epoch 40/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.13it/s]                   all          9          9      0.947          1      0.995      0.969
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+Closing dataloader mosaic
+
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+      41/50      2.38G     0.5656      1.448      1.192          9        640:   0%|          | 0/1 [00:02<?, ?it/s]      41/50      2.38G     0.5656      1.448      1.192          9        640: 100%|██████████| 1/1 [00:02<00:00,  2.00s/it]      41/50      2.38G     0.5656      1.448      1.192          9        640: 100%|██████████| 1/1 [00:02<00:00,  2.00s/it]
+Progress update: Epoch 41/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 13.82it/s]                   all          9          9      0.987          1      0.995      0.979
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      42/50      2.37G     0.3552      1.048      1.082          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      42/50      2.37G     0.3552      1.048      1.082          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.76it/s]      42/50      2.37G     0.3552      1.048      1.082          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.75it/s]
+Progress update: Epoch 42/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 12.75it/s]                   all          9          9      0.987          1      0.995      0.979
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      43/50      2.38G     0.3406      1.049      1.002          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      43/50      2.38G     0.3406      1.049      1.002          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.27it/s]      43/50      2.38G     0.3406      1.049      1.002          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.27it/s]
+Progress update: Epoch 43/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 15.29it/s]                   all          9          9      0.988          1      0.995       0.97
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      44/50      2.37G      0.398       1.13      1.068          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      44/50      2.37G      0.398       1.13      1.068          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.99it/s]      44/50      2.37G      0.398       1.13      1.068          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.98it/s]
+Progress update: Epoch 44/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 17.80it/s]                   all          9          9      0.988          1      0.995       0.97
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      45/50      2.38G     0.4069      1.005      1.085          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      45/50      2.38G     0.4069      1.005      1.085          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.25it/s]      45/50      2.38G     0.4069      1.005      1.085          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.25it/s]
+Progress update: Epoch 45/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.99it/s]                   all          9          9      0.966          1      0.995      0.933
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      46/50      2.37G     0.3502     0.9253      1.026          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      46/50      2.37G     0.3502     0.9253      1.026          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.97it/s]      46/50      2.37G     0.3502     0.9253      1.026          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.96it/s]
+Progress update: Epoch 46/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.05it/s]                   all          9          9      0.966          1      0.995      0.933
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      47/50      2.38G        0.3     0.9365      0.973          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      47/50      2.38G        0.3     0.9365      0.973          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.27it/s]      47/50      2.38G        0.3     0.9365      0.973          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.26it/s]
+Progress update: Epoch 47/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.13it/s]                   all          9          9      0.958      0.996      0.995       0.93
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+      48/50      2.37G     0.3309     0.9634      1.073          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      48/50      2.37G     0.3309     0.9634      1.073          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.81it/s]      48/50      2.37G     0.3309     0.9634      1.073          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.81it/s]
+Progress update: Epoch 48/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.28it/s]                   all          9          9      0.958      0.996      0.995       0.93
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      49/50      2.37G     0.2704     0.9284     0.9285          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      49/50      2.37G     0.2704     0.9284     0.9285          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.18it/s]      49/50      2.37G     0.2704     0.9284     0.9285          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.17it/s]
+Progress update: Epoch 49/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.65it/s]                   all          9          9      0.963      0.997      0.995       0.96
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      50/50      2.37G     0.3498     0.9532      1.009          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      50/50      2.37G     0.3498     0.9532      1.009          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.65it/s]      50/50      2.37G     0.3498     0.9532      1.009          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.64it/s]
+Progress update: Epoch 50/50
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 18.05it/s]                   all          9          9      0.963      0.997      0.995       0.96
+
+50 epochs completed in 0.011 hours.
+Optimizer stripped from runs/detect/train/weights/last.pt, 22.5MB
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+Optimizer stripped from runs/detect/train/weights/best.pt, 22.5MB
+
+Validating runs/detect/train/weights/best.pt...
+Ultralytics YOLOv8.1.0 🚀 Python-3.8.10 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 7792MiB)
+Model summary (fused): 168 layers, 11126358 parameters, 0 gradients, 28.4 GFLOPs
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 22.37it/s]INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+                   all          9          9      0.988          1      0.995      0.979
+                   dog          9          6      0.992          1      0.995      0.962
+                   cat          9          3      0.983          1      0.995      0.995
+Speed: 0.2ms preprocess, 3.0ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to [1mruns/detect/train[0m
+INFO:     127.0.0.1:39742 - "GET /training-progress HTTP/1.1" 200 OK
+Reloaded newly trained model from runs/detect/train/weights/best.pt
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "POST /open-results-folder HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59612 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59612 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59612 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59612 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59612 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59612 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59612 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59612 - "GET /get-leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET /get-leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "POST /open-results-folder HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /dataset-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+Training config: nc=2, names=['dog', 'cat']
+INFO:     127.0.0.1:43822 - "POST /train?epochs=10 HTTP/1.1" 200 OK
+Dataset validation: nc=2, classes=['dog', 'cat']
+Found 9 label files
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+New https://pypi.org/project/ultralytics/8.4.8 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.1.0 🚀 Python-3.8.10 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 7792MiB)
+[34m[1mengine/trainer: [0mtask=detect, mode=train, model=yolov8s.pt, data=/home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/backend/temp_data.yaml, epochs=10, time=None, patience=50, batch=16, imgsz=640, save=True, save_period=-1, cache=False, device=0, workers=8, project=None, name=train2, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/detect/train2
+Overriding model.yaml nc=80 with nc=2
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]                 
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+  2                  -1  1     29056  ultralytics.nn.modules.block.C2f             [64, 64, 1, True]             
+  3                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  4                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]           
+  5                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  6                  -1  2    788480  ultralytics.nn.modules.block.C2f             [256, 256, 2, True]           
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]              
+  8                  -1  1   1838080  ultralytics.nn.modules.block.C2f             [512, 512, 1, True]           
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 12                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 15                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+ 16                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 18                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+ 19                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 21                  -1  1   1969152  ultralytics.nn.modules.block.C2f             [768, 512, 1]                 
+ 22        [15, 18, 21]  1   2116822  ultralytics.nn.modules.head.Detect           [2, [128, 256, 512]]          
+Model summary: 225 layers, 11136374 parameters, 11136358 gradients, 28.6 GFLOPs
+
+Transferred 349/355 items from pretrained weights
+[34m[1mTensorBoard: [0mStart with 'tensorboard --logdir runs/detect/train2', view at http://localhost:6006/
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [0mchecks passed ✅
+
+[34m[1mtrain: [0mScanning /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels.cache... 9 images, 0 backgrounds, 0 corrupt: 100%|██████████| 9/9 [00:00<?, ?it/s][34m[1mtrain: [0mScanning /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels.cache... 9 images, 0 backgrounds, 0 corrupt: 100%|██████████| 9/9 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels.cache... 9 images, 0 backgrounds, 0 corrupt: 100%|██████████| 9/9 [00:00<?, ?it/s][34m[1mval: [0mScanning /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset/labels.cache... 9 images, 0 backgrounds, 0 corrupt: 100%|██████████| 9/9 [00:00<?, ?it/s]
+Plotting labels to runs/detect/train2/labels.jpg... 
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically... 
+[34m[1moptimizer:[0m AdamW(lr=0.001667, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43822 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47612 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47612 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47612 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47612 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47612 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47612 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47612 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37368 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET / HTTP/1.1" 200 OK
+10 epochs...
+Closing dataloader mosaic
+INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+       1/10       2.4G      1.741      7.548      2.088          9        640:   0%|          | 0/1 [00:01<?, ?it/s]       1/10       2.4G      1.741      7.548      2.088          9        640: 100%|██████████| 1/1 [00:01<00:00,  1.80s/it]       1/10       2.4G      1.741      7.548      2.088          9        640: 100%|██████████| 1/1 [00:01<00:00,  1.80s/it]
+Progress update: Epoch 1/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 12.52it/s]                   all          9          9      0.218      0.504      0.467      0.334
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       2/10      2.33G      2.078      6.356      2.465          9        640:   0%|          | 0/1 [00:00<?, ?it/s]       2/10      2.33G      2.078      6.356      2.465          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.04it/s]       2/10      2.33G      2.078      6.356      2.465          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.04it/s]
+Progress update: Epoch 2/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 14.62it/s]                   all          9          9       0.25      0.583      0.449      0.323
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       3/10      2.33G      1.592      6.813      1.874          9        640:   0%|          | 0/1 [00:00<?, ?it/s]       3/10      2.33G      1.592      6.813      1.874          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.23it/s]       3/10      2.33G      1.592      6.813      1.874          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.22it/s]
+Progress update: Epoch 3/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.50it/s]                   all          9          9      0.213      0.618      0.431      0.306
+INFO:     127.0.0.1:38026 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       4/10      2.33G      1.673      6.635       2.29          9        640:   0%|          | 0/1 [00:00<?, ?it/s]       4/10      2.33G      1.673      6.635       2.29          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.32it/s]       4/10      2.33G      1.673      6.635       2.29          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.31it/s]
+Progress update: Epoch 4/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 21.27it/s]                   all          9          9      0.245       0.75      0.419      0.294
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       5/10      2.33G      1.589      7.549      2.127          9        640:   0%|          | 0/1 [00:00<?, ?it/s]       5/10      2.33G      1.589      7.549      2.127          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.24it/s]       5/10      2.33G      1.589      7.549      2.127          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.23it/s]
+Progress update: Epoch 5/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 22.23it/s]                   all          9          9      0.237      0.654      0.416      0.287
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:58020 - "GET / HTTP/1.1" 200 OK
+       6/10      2.29G       1.61      6.517      2.088          9        640:   0%|          | 0/1 [00:00<?, ?it/s]       6/10      2.29G       1.61      6.517      2.088          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.32it/s]       6/10      2.29G       1.61      6.517      2.088          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.31it/s]
+Progress update: Epoch 6/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 21.23it/s]                   all          9          9      0.863       0.25      0.435       0.31
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       7/10      2.29G       1.82      6.996      2.235          9        640:   0%|          | 0/1 [00:00<?, ?it/s]       7/10      2.29G       1.82      6.996      2.235          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.28it/s]       7/10      2.29G       1.82      6.996      2.235          9        640: 100%|██████████| 1/1 [00:00<00:00,  9.27it/s]
+Progress update: Epoch 7/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 19.96it/s]                   all          9          9      0.253      0.673      0.456      0.306
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       8/10      2.32G      1.794      7.202      2.348          9        640:   0%|          | 0/1 [00:00<?, ?it/s]       8/10      2.32G      1.794      7.202      2.348          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.56it/s]       8/10      2.32G      1.794      7.202      2.348          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.56it/s]
+Progress update: Epoch 8/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 20.45it/s]                   all          9          9      0.993      0.333      0.605      0.383
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]       9/10      2.37G      1.324      5.411      1.816          9        640:   0%|          | 0/1 [00:00<?, ?it/s]       9/10      2.37G      1.324      5.411      1.816          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.73it/s]       9/10      2.37G      1.324      5.411      1.816          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.72it/s]
+Progress update: Epoch 9/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 20.75it/s]                   all          9          9       0.34      0.738      0.648      0.415
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+  0%|          | 0/1 [00:00<?, ?it/s]      10/10      2.37G      1.403       4.67      2.051          9        640:   0%|          | 0/1 [00:00<?, ?it/s]      10/10      2.37G      1.403       4.67      2.051          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.57it/s]      10/10      2.37G      1.403       4.67      2.051          9        640: 100%|██████████| 1/1 [00:00<00:00,  8.56it/s]
+Progress update: Epoch 10/10
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 20.70it/s]                   all          9          9      0.577      0.641      0.668      0.459
+INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+
+10 epochs completed in 0.027 hours.
+Optimizer stripped from runs/detect/train2/weights/last.pt, 22.5MB
+Optimizer stripped from runs/detect/train2/weights/best.pt, 22.5MB
+
+Validating runs/detect/train2/weights/best.pt...
+Ultralytics YOLOv8.1.0 🚀 Python-3.8.10 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 7792MiB)
+Model summary (fused): 168 layers, 11126358 parameters, 0 gradients, 28.4 GFLOPs
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:00<?, ?it/s]                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 23.74it/s]INFO:     127.0.0.1:58020 - "GET / HTTP/1.1" 200 OK
+                   all          9          9      0.583      0.641      0.668      0.459
+                   dog          9          6      0.741          1      0.948      0.608
+                   cat          9          3      0.424      0.283      0.388      0.311
+INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+Speed: 0.2ms preprocess, 2.9ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to [1mruns/detect/train2[0m
+Reloaded newly trained model from runs/detect/train2/weights/best.pt
+INFO:     127.0.0.1:58020 - "GET /training-progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /current-model HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52436 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52436 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52436 - "POST /open-results-folder HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52436 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52436 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52436 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52436 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37686 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56960 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56960 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56960 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56960 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56960 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36816 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36820 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36820 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36820 - "GET / HTTP/1.1" 200 OK

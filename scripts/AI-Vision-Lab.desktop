@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=AI智能识别系统
+Comment=AI智能识别系统 - 计算机视觉教学平台
+Exec=gnome-terminal -- bash -c "cd /home/cyun/Documents/tju-vision-lab && ./scripts/start.sh; exec bash"
+Icon=/home/cyun/Documents/tju-vision-lab/assets/icon.png
+Terminal=true
+Categories=Development;Education;Science;
+Keywords=AI;Vision;ML;DeepLearning;YOLO;
+StartupNotify=true

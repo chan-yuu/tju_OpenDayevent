@@ -1,0 +1,7 @@
+names:
+- dog
+- cat
+nc: 2
+path: /home/cyun/Documents/1.31-demo开发/tju-project/tju-vision-lab/dataset
+train: images
+val: images
