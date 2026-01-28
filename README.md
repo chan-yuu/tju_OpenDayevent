@@ -1,11 +1,17 @@
-# 校园智能调度系统
+# 校园智能调度系统/感知系统/规划系统
 
 [![GitHub](https://img.shields.io/badge/GitHub-tju--scheduling--lab-blue)](https://github.com)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-green)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 ## 项目简介
-校园环境下无人驾驶接驳车/物流车的智能调度系统，通过可视化界面让用户直观体验各种调度算法的运行效果。
+校园环境下无人驾驶接驳车/物流车的智能调度系统/感知系统/规划系统，通过可视化界面让用户直观体验各种调度算法的运行效果。
+<img width="2552" height="1336" alt="vis" src="https://github.com/user-attachments/assets/35023924-b60f-4823-92ee-57d932bf7f2d" />
+
+<img width="2552" height="1341" alt="vis" src="https://github.com/user-attachments/assets/b7c497c5-1945-4347-bd5e-b4f4a159441e" />
+
+<img width="1923" height="1175" alt="vis" src="https://github.com/user-attachments/assets/9236a75b-e659-44c7-b349-35fd2fa668ec" />
+
 
 ## 📚 快速导航
 
