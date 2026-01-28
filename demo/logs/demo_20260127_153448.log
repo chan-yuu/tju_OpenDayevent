@@ -1,0 +1,23 @@
+INFO:     Started server process [55529]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50206 - "GET /api/scenarios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50206 - "GET /api/scenarios/city_roads HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50206 - "OPTIONS /api/plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50206 - "POST /api/plan HTTP/1.1" 200 OK
+ion: none
+
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.174.131:8080
+Hit CTRL-C to stop the server
+
+[2026-01-27T07:34:53.023Z]  "GET /" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+(node:55605) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2026-01-27T07:34:53.207Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:34:53.210Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:34:53.211Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:34:53.212Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:34:53.213Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"

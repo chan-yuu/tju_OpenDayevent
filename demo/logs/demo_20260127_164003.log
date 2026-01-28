@@ -1,0 +1,29 @@
+INFO:     Started server process [74513]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+✓ 已加载 1 条排行榜记录
+INFO:     127.0.0.1:58578 - "GET /api/scenarios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58578 - "GET /api/scenarios/cyun1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58578 - "OPTIONS /api/plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58578 - "POST /api/plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58578 - "OPTIONS /api/control/compare-pid HTTP/1.1" 200 OK
+收到PID对比请求:
+  路径点数量: 44
+  起点: [7.0, 31.0]
+  终点: [26.0, 11.0]
+  路径前3点: [[7.0, 31.0], [8.0, 32.0], [9.0, 33.0]]
+INFO:     127.0.0.1:58578 - "POST /api/control/compare-pid HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47420 - "GET /api/quiz/leaderboard HTTP/1.1" 200 OK
+7T08:40:07.644Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:07.646Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:07.646Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:07.647Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:07.647Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:48.653Z]  "GET /quiz.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:51.258Z]  "GET /" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:51.273Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:51.274Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:51.275Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:51.275Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:40:51.275Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"

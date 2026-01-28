@@ -1,0 +1,50 @@
+INFO:     Started server process [47431]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51760 - "OPTIONS /api/plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51760 - "POST /api/plan HTTP/1.1" 200 OK
+ion Timeout: 120 seconds
+Directory Listings: visible
+AutoIndex: visible
+Serve GZIP Files: false
+Serve Brotli Files: false
+Default File Extension: none
+
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.174.131:8080
+Hit CTRL-C to stop the server
+
+[2026-01-27T07:11:11.198Z]  "GET /" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+(node:47507) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2026-01-27T07:11:11.345Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:11.347Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:11.348Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:11.348Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:11.349Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:45.878Z]  "GET /" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:45.897Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:45.899Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:45.901Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:45.902Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:45.904Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:50.250Z]  "GET /" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:50.262Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:50.263Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:50.263Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:50.266Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:11:50.267Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:12:12.032Z]  "GET /" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:12:12.045Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:12:12.047Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:12:12.047Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:12:12.047Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:12:12.049Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:13:30.649Z]  "GET /" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:13:30.658Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:13:30.659Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:13:30.660Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:13:30.660Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T07:13:30.661Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"

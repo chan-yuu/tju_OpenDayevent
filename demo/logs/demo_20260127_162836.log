@@ -1,0 +1,19 @@
+INFO:     Started server process [68493]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+✓ 已加载 1 条排行榜记录
+INFO:     127.0.0.1:45784 - "GET /api/scenarios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45794 - "GET /api/scenarios/cyun1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56372 - "OPTIONS /api/plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56372 - "POST /api/plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56372 - "OPTIONS /api/control/compare-pid HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56372 - "POST /api/control/compare-pid HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:36352 - "POST /api/control/compare-pid HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:36352 - "POST /api/control/compare-pid HTTP/1.1" 422 Unprocessable Entity
+d)
+[2026-01-27T08:28:41.538Z]  "GET /css/style.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:28:41.540Z]  "GET /js/config.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:28:41.541Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:28:41.542Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:28:41.542Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"

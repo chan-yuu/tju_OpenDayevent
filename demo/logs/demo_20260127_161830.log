@@ -1,0 +1,23 @@
+INFO:     Started server process [64881]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:42672 - "GET /api/scenarios HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42674 - "GET /api/scenarios/city_roads HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42674 - "OPTIONS /api/plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42674 - "POST /api/plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34226 - "OPTIONS /api/control/compare-pid HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34226 - "POST /api/control/compare-pid HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:34238 - "GET /api/quiz/leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53672 - "OPTIONS /api/quiz/submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53672 - "POST /api/quiz/submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53672 - "GET /api/quiz/leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53672 - "GET /api/quiz/leaderboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53672 - "GET /api/quiz/leaderboard HTTP/1.1" 200 OK
+inux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:18:35.631Z]  "GET /js/canvas.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:18:35.632Z]  "GET /js/api.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:18:35.633Z]  "GET /js/app.js" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:18:59.613Z]  "GET /quiz.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:20:50.839Z]  "GET /quiz.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+[2026-01-27T08:20:53.617Z]  "GET /quiz.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
