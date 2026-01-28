@@ -5,8 +5,6 @@
 这是一个基于Web的交互式自动驾驶路径规划演示系统，集成了 `python_motion_planning` 库的多种经典路径规划算法，提供直观的可视化界面和实时性能对比功能。
 <img width="2552" height="1341" alt="vis" src="https://github.com/user-attachments/assets/80e77075-55af-43e9-8343-3b549a4a711f" />
 
-![Demo Screenshot](demo/screenshots/demo.png)
-
 ## ✨ 主要特性
 
 - 🗺️ **交互式地图编辑**：点击或拖拽绘制障碍物、设置起终点
