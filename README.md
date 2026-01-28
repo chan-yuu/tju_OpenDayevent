@@ -6,6 +6,7 @@
 
 ## 项目简介
 校园环境下无人驾驶接驳车/物流车的智能调度系统，通过可视化界面让用户直观体验各种调度算法的运行效果。
+<img width="2552" height="1336" alt="vis" src="https://github.com/user-attachments/assets/4ceaa4ba-dc78-4db7-9d1e-6c89b5b3d06e" />
 
 ## 📚 快速导航
 
